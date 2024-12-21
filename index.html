@@ -3,10 +3,30 @@ html
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Web App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to ProBot!</h1>
-    <a href="{{ url_for('login') }}">Login</a>
+    <header>
+        <h1>Welcome to My Discord Bot Dashboard</h1>
+        <nav>
+            <button id="loginBtn">Login with Discord</button>
+            <button id="logoutBtn">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <section id="profile" class="hidden">
+            <h2>Profile Information</h2>
+            <!-- Info will be dynamically populated here -->
+            <p id="profileInfo">User Info will appear here once logged in.</p>
+        </section>
+        <section id="dashboard" class="hidden">
+            <h2>Bot Dashboard</h2>
+            <!-- Bot control and info will go here -->
+            <p>Manage your bot from here.</p>
+        </section>
+    </main>
+    <script src="app.js"></script>
 </body>
 </html>
