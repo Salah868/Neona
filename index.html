@@ -1,32 +1,46 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Bot Web App</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Your Page Title</title>
+    <style>
+       .hidden {
+          display: none;
+       }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Discord Bot Dashboard</h1>
-        <nav>
-            <button id="loginBtn">Login with Discord</button>
-            <button id="logoutBtn">Logout</button>
-        </nav>
-    </header>
-    <main>
-        <section id="profile" class="hidden">
-            <h2>Profile Information</h2>
-            <!-- Info will be dynamically populated here -->
-            <p id="profileInfo">User Info will appear here once logged in.</p>
-        </section>
-        <section id="dashboard" class="hidden">
-            <h2>Bot Dashboard</h2>
-            <!-- Bot control and info will go here -->
-            <p>Manage your bot from here.</p>
-        </section>
-    </main>
-    <script src="app.js"></script>
+    <!-- Your HTML content here -->
+    <button id="loginBtn">Login with Discord</button>
+    <button id="logoutBtn" class="hidden">Logout</button>
+
+    <div id="profile" class="hidden">
+        <!-- Profile content -->
+    </div>
+
+    <div id="dashboard" class="hidden">
+        <!-- Dashboard content -->
+    </div>
+
+    <!-- Add your JavaScript just before the closing body tag -->
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', () => {
+            alert('Login with Discord is not implemented yet.');
+            // Add Discord OAuth login process here
+        });
+
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            alert('Logout is not implemented yet.');
+            // Add logout process and session termination here
+        });
+
+        // Simulate showing profile and dashboard for demonstration
+        let profile = document.getElementById('profile');
+        let dashboard = document.getElementById('dashboard');
+
+        profile.classList.toggle('hidden');
+        dashboard.classList.toggle('hidden');
+    </script>
 </body>
 </html>
