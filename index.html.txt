@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        #profileInfo {
+            display: none;
+        }
+        img#profilePic {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discord  Login</h1>
+    </header>
+
+    <main>
+        <div id="loginSection">
+            <button id="loginBtn" onclick="loginWithDiscord()">Log in with Discord</button>
+        </div>
+        <div id="profileInfo">
+            <img id="profilePic" alt="Profile Picture">
+            <p id="username"></p>
+            <a id="profileLink" href="#" target="_blank">View Profile</a>
+            <a id="logoutLink" href="#" onclick="logout()">Logout</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
