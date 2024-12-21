@@ -1,46 +1,14 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <style>
-       .hidden {
-          display: none;
-       }
-    </style>
+    <title>Environment Demo</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Your HTML content here -->
-    <button id="loginBtn">Login with Discord</button>
-    <button id="logoutBtn" class="hidden">Logout</button>
-
-    <div id="profile" class="hidden">
-        <!-- Profile content -->
-    </div>
-
-    <div id="dashboard" class="hidden">
-        <!-- Dashboard content -->
-    </div>
-
-    <!-- Add your JavaScript just before the closing body tag -->
-    <script>
-        document.getElementById('loginBtn').addEventListener('click', () => {
-            alert('Login with Discord is not implemented yet.');
-            // Add Discord OAuth login process here
-        });
-
-        document.getElementById('logoutBtn').addEventListener('click', () => {
-            alert('Logout is not implemented yet.');
-            // Add logout process and session termination here
-        });
-
-        // Simulate showing profile and dashboard for demonstration
-        let profile = document.getElementById('profile');
-        let dashboard = document.getElementById('dashboard');
-
-        profile.classList.toggle('hidden');
-        dashboard.classList.toggle('hidden');
-    </script>
+    <h1>Client ID Demo</h1>
+    <div id="credentials"></div>
 </body>
 </html>
